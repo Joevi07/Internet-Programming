@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe's Space</title>
+    <style>
+      section h1{
+        margin-top: 0;
+        padding-top:30px;
+
+      }
+      body {
+        margin: 0;
+      }
+
+      .nav_part {
+        list-style-type: none;
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        margin-right: 40px;
+        font-size: 20px;
+        margin-top: 30px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      #heading {
+        margin-top: -30px;
+      }
+      #home {
+        position: relative;
+        height: 70vh;
+        overflow: hidden;
+      }
+      pre{
+        margin:10px 0;
+      }
+      #home img {
+        width: 100%;
+        height: 100%;
+      }
+      .home-content {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+     
+  
+      }
+      .novaheal_img{
+        width:40%;
+        height: 30%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav_part">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 id="heading">JOE'S SPACE</h1>
+    </header>
+    <section id="home">
+      <img src="home_img.jpg" alt="Home Image" />
+      <div class="home-content">
+        <h1>Hi, I'm Mariya Joevita👋</h1>
+        <h2>Web Developer & Computer Science Student</h2>
+        <p>
+          Turning ideas into interactive web experiences and love learning new
+          technologies.
+        </p>
+        <button>View Projects</button>
+        <button>Contact Me</button>
+      </div>
+    </section>
+    <section id="about">
+      <article>
+        <header>
+          <h1>About Me..!</h1>
+        </header>
+        <pre>
+         ⭐ Hello! I'm <strong>Mariya Joevita</strong>, a <b>Computer Science Student</b> with a deep interest in <em>web development</em> and <i>software engineering</i>.
+        </pre>
+        <pre>
+         ⭐ I enjoy creating <mark>interactive and user-friendly websites</mark> using modern web technologies.
+        </pre>
+        <pre>
+         ⭐ Skilled in <strong>HTML5</strong>,<strong>CSS</strong>,<strong>JavaScript</strong>, and exploring frameworks like <em>React</em> and backend development using <b>Java</b> and <b>Spring Boot</b>. 
+        </pre>
+        <pre>
+         ⭐ My goal is to become a <mark>full-stack developer</mark> and build applications that solve <em>real-world problems</em>.
+        </pre>
+        <pre>
+         ⭐ Passionate about <em>continuous learning</em> and <strong>problem solving</strong>.
+        </pre>
+      </article>
+    </section>
+    <section id="skills">
+      <h1>Skills</h1>
+      <table border="2" cellpadding="10" cellspacing="0" align="center">
+        <caption>
+          <strong>Technical Skills Overview</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Skill</th>
+            <th>Description</th>
+            <th>Proficiency Level</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">Frontend</td>
+            <td>HTML5</td>
+            <td>Semantic elements, forms, media</td>
+            <td><progress value="90" max="100"></progress> 90%</td>
+          </tr>
+
+          <tr>
+            <td>CSS3</td>
+            <td>Flexbox, responsive layouts</td>
+            <td><progress value="80" max="100"></progress> 80%</td>
+          </tr>
+
+          <tr>
+            <td>JavaScript</td>
+            <td>DOM Manipulation, Callbacks, JSON</td>
+            <td><progress value="75" max="100"></progress> 70%</td>
+          </tr>
+
+          <!-- Backend -->
+          <tr>
+            <td rowspan="2">Backend</td>
+            <td>Java</td>
+            <td>OOPS, Collections</td>
+            <td><progress value="85" max="100"></progress> 75%</td>
+          </tr>
+
+          <tr>
+            <td>Spring Boot</td>
+            <td>REST API's</td>
+            <td><progress value="65" max="100"></progress> 65%</td>
+          </tr>
+
+          <!-- DataBase -->
+          <tr>
+            <td>Database</td>
+            <td>MongoDB</td>
+            <td>CRUD Operations</td>
+            <td><progress value="70" max="100"></progress> 70%</td>
+          </tr>
+
+          <!-- Tools -->
+          <tr>
+            <td rowspan="2">Tools</td>
+            <td>Git & GitHub</td>
+            <td>Version control</td>
+            <td><progress value="75" max="100"></progress> 75%</td>
+          </tr>
+
+          <tr>
+            <td>VS Code</td>
+            <td>Code editor</td>
+            <td><progress value="85" max="100"></progress> 85%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="projects">
+      <h1>My Projects..!</h1>
+      <article>
+        <figure>
+          <img class = "novaheal_img" src="novaheal.png" alt="NovaHeal image" />
+          <figcaption><pre>NovaHeal-Demo-Image</pre></figcaption>
+        </figure>
+        <header>
+          <h3>NovaHeal - Hospital Management System</h3>
+        </header>
+        <p>
+          <b> NovaHeal</b> is a <em>Hospital Management System </em>designed to
+          efficiently manage patients, doctors, rooms, appointments,
+          prescriptions, and billing using <i>Oracle SQL Plus</i>. It offers a
+          structured and normalized relational database model tailored for
+          real-world hospital operations.
+        </p>
+        <p>
+          <strong>Technologies Used:</strong>
+          React, Spring Boot, MongoDB
+        </p>
+        <footer>
+          <a
+            href="https://github.com/Joevi07/NovaHeal-Hospital-Management-System.git"
+            target="_blank"
+            rel="noopener"
+            >🔗 GitHub Repository</a
+          >
+        </footer>
+      </article>
+
+      <!-- Project 2 -->
+      <article>
+        <figure>
+          <img src="OP_SS1.png" alt="LinguaSphere image" />
+          <figcaption><pre>LinguaSphere-Demo-Image</pre></figcaption>
+        </figure>
+        <header>
+          <h3>LinguaSphere - Language Learning Tool</h3>
+        </header>
+        <p>
+          <b>Linguasphere</b> is a <i>language-learning app</i> that combines <mark>flashcards,
+          quizzes, and interactive lessons</mark> for mastering vocabulary, grammar,
+          and pronunciation. With multiple levels across languages like <i>French,
+          German, and Spanish</i>, it adapts to user progress, making learning both
+          effective and enjoyable.
+        </p>
+        <p>
+          <strong>Technologies Used:</strong>
+          Java, Android Studio, FireBase
+        </p>
+        <footer>
+          <a
+            href="https://github.com/Joevi07/LinguaSphere---Language-Learning-Kit.git"
+            target="_blank"
+            rel="noopener"
+            >🔗 GitHub Repository</a
+          >
+        </footer>
+      </article>
+    </section>
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <!-- Contact Form -->
+      <form action="#" method="post">
+        <fieldset>
+          <legend><b>Get in Touch</b></legend>
+          <label for="name">Full Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          /><br /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          /><br /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message here..."
+            required
+          ></textarea
+          ><br /><br />
+
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear</button>
+        </fieldset>
+      </form>
+
+      <hr />
+
+      <!-- Contact Information -->
+      <address>
+        <p>
+          Email:
+          <a href="mailto:riyajoe07@gmail.com">riyajoe07@gmail.com</a>
+        </p>
+        <p>
+          Phone:
+          <a href="tel:+919876543210">+919876543210</a>
+        </p>
+        <p>Location: Tamil Nadu, India</p>
+      </address>
+    </section>
+  </body>
+</html>
